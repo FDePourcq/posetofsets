@@ -16,7 +16,7 @@ This information is captured in the following datastructure:
 - Edges exist where there is a subset-relationship.
 - The amount of edges is minimal, there are no redundant edges.
 - A spanning tree is maintained (the red-colored edges) to keep track which set of subelements corresponds with each node (except the all-node).  Every edge of the spanning tree corresponds with the introduction of additional subelements. When following the path from an arbitrary node towards the empty node one can reconstruct the corresponding set of subelements.
-- There is also a reverse lookup multimap to more efficiently track which nodes introduces a given subelement.
+- There is also a reverse lookup multimap to more efficiently track which nodes introduce a given subelement.
 - The datastructure corresponds with a Hasse-diagram when the nodes for all possible combinations of subelements are added. In that case the diagram corresponds with a n-dimensional hypercube whereby n equals the amount of unique subelements.
 - The nodes can be augmented with some useful payload.
 
