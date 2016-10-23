@@ -1,10 +1,6 @@
 #ifndef POSETOFSETS_HPP_INCLUDED
 #define POSETOFSETS_HPP_INCLUDED
 
-// every posetnode represents a specific set of subelements,
-// each posetnode is connected to the
-// if a subelement gets removed all posetnodes associated with sets containing that subelement have to go.
-
 #include <iostream>
 #include <boost/lexical_cast.hpp>
 #define prt(x) std::cerr << #x " = '" << x << "'" << std::endl;
