@@ -1,0 +1,34 @@
+digraph 123 { graph [splines=true,rankdir=BT]; node [shape=box]; edge [len=2, minlen=2];
+{rank=same;12033440 12034272 12035840 }
+{rank=same;12033856 12035136 12035472 }
+140726217374096 [label="ALL",style=filled,fillcolor=cyan]; { rank=sink; 140726217374096 }
+140726217374240 [label="EMPTY",style=filled,fillcolor="#85FFAF"];{ rank=source; 140726217374240 }
+12033440 [label="this: 0xb79da0\llarger: [0xb79f40, 0xb7a440]\lderiving_chains: [0xb79f40]\lsize: 1\lsmaller: lower_chain: 0x7ffd60327a20\lintroduced here: {3}\l[0x7ffd60327a20]\l"];
+12033856 [label="this: 0xb79f40\llarger: [0x7ffd60327990]\lderiving_chains: []\lsize: 2\lsmaller: lower_chain: 0xb79da0\lintroduced here: {2}\l[0xb79da0]\l"];
+12034272 [label="this: 0xb7a0e0\llarger: [0xb7a590]\lderiving_chains: [0xb7a590]\lsize: 1\lsmaller: lower_chain: 0x7ffd60327a20\lintroduced here: {1}\l[0x7ffd60327a20]\l"];
+12034640 [label="this: 0xb7a250\llarger: [0x7ffd60327990]\lderiving_chains: []\lsize: 3\lsmaller: lower_chain: 0xb7a700\lintroduced here: {1, 2}\l[0xb7a590, 0xb7a700]\l"];
+12035136 [label="this: 0xb7a440\llarger: [0x7ffd60327990]\lderiving_chains: []\lsize: 2\lsmaller: lower_chain: 0xb7a700\lintroduced here: {3}\l[0xb79da0, 0xb7a700]\l"];
+12035472 [label="this: 0xb7a590\llarger: [0xb7a250]\lderiving_chains: []\lsize: 2\lsmaller: lower_chain: 0xb7a0e0\lintroduced here: {2}\l[0xb7a0e0]\l"];
+12035840 [label="this: 0xb7a700\llarger: [0xb7a250, 0xb7a440]\lderiving_chains: [0xb7a250, 0xb7a440]\lsize: 1\lsmaller: lower_chain: 0x7ffd60327a20\lintroduced here: {0}\l[0x7ffd60327a20]\l"];
+140726217374096 [label="this: 0x7ffd60327990\llarger: []\lderiving_chains: []\lsize: 18446744073709551615\lsmaller: lower_chain: 0\lintroduced here: {}\l[0xb79f40, 0xb7a250, 0xb7a440]\l"];
+140726217374240 [label="this: 0x7ffd60327a20\llarger: [0xb79da0, 0xb7a0e0, 0xb7a700]\lderiving_chains: [0xb79da0, 0xb7a0e0, 0xb7a700]\lsize: 0\lsmaller: lower_chain: 0\lintroduced here: {}\l[]\l"];
+12033440	-> 12033856 [constraint=true,dir=both]
+12033440	-> 12035136 [constraint=true,dir=both]
+12033440	-> 12033856 [color=red,dir=both]
+12033856	-> 140726217374096 [constraint=true,dir=both]
+12034272	-> 12035472 [constraint=true,dir=both]
+12034272	-> 12035472 [color=red,dir=both]
+12034640	-> 140726217374096 [constraint=true,dir=both]
+12035136	-> 140726217374096 [constraint=true,dir=both]
+12035472	-> 12034640 [constraint=true,dir=both]
+12035840	-> 12034640 [constraint=true,dir=both]
+12035840	-> 12035136 [constraint=true,dir=both]
+12035840	-> 12034640 [color=red,dir=both]
+12035840	-> 12035136 [color=red,dir=both]
+140726217374240	-> 12033440 [constraint=true,dir=both]
+140726217374240	-> 12034272 [constraint=true,dir=both]
+140726217374240	-> 12035840 [constraint=true,dir=both]
+140726217374240	-> 12033440 [color=red,dir=both]
+140726217374240	-> 12034272 [color=red,dir=both]
+140726217374240	-> 12035840 [color=red,dir=both]
+}
